@@ -1,0 +1,122 @@
+#Favorites {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 88%;
+  justify-content: center;
+  margin: 6%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-bottom: 5%;
+}
+
+.favorite-banner {
+  margin-top: 3%;
+  width: 100%;
+  background-color: #adadad;
+}
+
+.favorite-text-title {
+  color: white;
+}
+
+.main-menu {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  margin: 3%;
+  grid-gap: 4%;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+}
+
+.cupcake-text {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cupcake0 {
+  background: url("../../Assets/favorites/white-top.svg") no-repeat
+      center/contain,
+    url("../../Assets/favorites/chocolate-chocolate.jpg") no-repeat
+      center/contain;
+  width: 100%;
+  height: 300px;
+}
+
+.cupcake1 {
+  background: url("../../Assets/favorites/white-top.svg") no-repeat
+      center/contain,
+    url("../../Assets/favorites/vanilla.jpg") no-repeat center/contain;
+  width: 100%;
+  height: 300px;
+}
+
+.cupcake2 {
+  background: url("../../Assets/favorites/white-top.svg") no-repeat
+      center/contain,
+    url("../../Assets/favorites/strawberry.jpg") no-repeat center/contain;
+  width: 100%;
+  height: 300px;
+}
+.cupcake3 {
+  background: url("../../Assets/favorites/white-top.svg") no-repeat
+      center/contain,
+    url("../../Assets/favorites/cherry.jpg") no-repeat center/contain;
+  width: 100%;
+  height: 300px;
+}
+.cupcake4 {
+  background: url("../../Assets/favorites/white-top.svg") no-repeat
+      center/contain,
+    url("../../Assets/favorites/cheesecake.jpg") no-repeat center/contain;
+  width: 100%;
+  height: 300px;
+}
+
+.cupcake5 {
+  background: url("../../Assets/favorites/white-top.svg") no-repeat
+      center/contain,
+    url("../../Assets/favorites/cartoon.jpg") no-repeat center/contain;
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  #Favorites {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 94%;
+    justify-content: center;
+    margin: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 20%;
+  }
+
+  .main-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5%;
+    margin: 1%;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .cupcake-text {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

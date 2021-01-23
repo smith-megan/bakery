@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  left: 54%;
+  top: 11%;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.863);
+  width: 30%;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.nav-link {
+  text-decoration: none;
+  border: none;
+  color: #582063;
+  font-family: "Castoro", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.nav-link:hover {
+  color: #fd5377;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: fixed;
+    left: 38%;
+    top: 11%;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.863);
+    width: 50%;
+    border-radius: 20px;
+    z-index: 3;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.863);
+    width: 100%;
+    border-radius: 0px;
+    z-index: 3;
+  }
+  .nav-link {
+    text-decoration: none;
+    border: none;
+    color: #582063;
+    font-family: "Castoro", serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .nav-link:hover {
+    color: #fd5377;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
