@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Montserrat:wght@400;500;600&display=swap");
 #Favorites {
   background-color: white;
   display: -ms-grid;
@@ -21,6 +22,10 @@
 }
 
 .favorite-text-title {
+  font-family: "Amita", cursive;
+  font-style: none;
+  font-size: 2.9rem;
+  line-height: 2.5rem;
   color: white;
 }
 
@@ -30,7 +35,7 @@
   -ms-grid-columns: 45% 45%;
       grid-template-columns: 45% 45%;
   margin: 3%;
-  grid-gap: 4%;
+  grid-gap: 2%;
 }
 
 .menu {
@@ -53,42 +58,50 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.7em;
+}
+
+.cupcake-header {
+  font-family: "Amita", cursive;
+  line-height: 1.2em;
+  color: #562f2a;
+}
+
+.shape {
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 8%;
 }
 
 .cupcake0 {
-  background: url("../../Assets/favorites/white-top.svg") no-repeat center/contain, url("../../Assets/favorites/chocolate-chocolate.jpg") no-repeat center/contain;
-  width: 100%;
-  height: 300px;
+  background: url("../../Assets/favorites/chocolate-chocolate.jpg") no-repeat center/cover;
 }
 
 .cupcake1 {
-  background: url("../../Assets/favorites/white-top.svg") no-repeat center/contain, url("../../Assets/favorites/vanilla.jpg") no-repeat center/contain;
-  width: 100%;
-  height: 300px;
+  background: url("../../Assets/favorites/vanilla.jpg") no-repeat center/cover;
 }
 
 .cupcake2 {
-  background: url("../../Assets/favorites/white-top.svg") no-repeat center/contain, url("../../Assets/favorites/strawberry.jpg") no-repeat center/contain;
-  width: 100%;
-  height: 300px;
+  background: url("../../Assets/favorites/strawberry.jpg") no-repeat center/cover;
 }
 
 .cupcake3 {
-  background: url("../../Assets/favorites/white-top.svg") no-repeat center/contain, url("../../Assets/favorites/cherry.jpg") no-repeat center/contain;
-  width: 100%;
-  height: 300px;
+  background: url("../../Assets/favorites/cherry.jpg") no-repeat center/cover;
 }
 
 .cupcake4 {
-  background: url("../../Assets/favorites/white-top.svg") no-repeat center/contain, url("../../Assets/favorites/cheesecake.jpg") no-repeat center/contain;
-  width: 100%;
-  height: 300px;
+  background: url("../../Assets/favorites/cheesecake.jpg") no-repeat center/cover;
 }
 
 .cupcake5 {
-  background: url("../../Assets/favorites/white-top.svg") no-repeat center/contain, url("../../Assets/favorites/cartoon.jpg") no-repeat center/contain;
-  width: 100%;
-  height: 300px;
+  background: url("../../Assets/favorites/cartoon.jpg") no-repeat center/cover;
 }
 
 @media screen and (max-width: 600px) {

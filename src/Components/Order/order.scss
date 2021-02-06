@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Montserrat:wght@400;500;600&display=swap");
+
+input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+}
+
 #Order {
-  font-family: "Castoro", serif;
-  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   background-color: white;
   width: 88%;
   margin: 6%;
@@ -18,13 +25,18 @@
 }
 
 .order-text-title {
+  font-family: "Amita", cursive;
+  font-style: none;
+  font-size: 2.9rem;
+  line-height: 2.2rem;
   color: white;
 }
 
 .body {
   width: 100%;
-  height: 700px;
+  // min-height: 700px;
   display: grid;
+  padding: 2%;
   margin-top: 3%;
   margin-bottom: 3%;
   grid-template-columns: 70% 28%;
@@ -40,25 +52,34 @@
   width: 100%;
   overflow: hidden;
   transform: 10s;
+
+  min-height: 700px;
 }
 
 .form-div {
   position: relative;
   color: #562f2a;
-  overflow: hidden;
+  overflow: scroll;
   background-color: #f6f6ea;
   top: 10%;
   left: 2%;
   transition: 1s;
   padding: 2%;
-  width: 92%;
-  border: 3px outset #f6f6ea;
+  width: 90%;
+  // outline: 3px outset #f6f6ea;
+  border: 11px dotted pink;
+  box-shadow: 7px 8px 11px 1px rgba(117, 117, 117, 0.274);
 }
 
 .actual-form {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 70% 30%;
   width: 100%;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
 
 .order-mailbox {
@@ -72,71 +93,96 @@
 .candies,
 .frosting {
   text-align: left;
-  justify-self: center;
-  width: 100%;
+  width: 90%;
   display: grid;
-  padding: 10px;
-  background-color: #fffff0;
+  padding-left: 9px;
+  line-height: 2.1rem;
 }
+
 .cupcakes-header,
 .cookies-header,
 .candies-header {
-  width: 80%;
+  width: 100%;
 }
+
+.header-group {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.form-item-header {
+  font-family: "Amita", cursive;
+}
+
+.frosted {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
 .cupcake-image {
-  text-align: right;
-  width: 90px;
-  height: 100px;
-  float: right;
-  background: url("../../Assets/multiplecupcakes.svg") no-repeat left / contain;
+  width: 100%;
+  background: url("../../Assets/multiplecupcakes.svg") no-repeat center /
+    contain;
 }
 
 .cookie-image {
-  width: 100px;
-  height: 100px;
-  float: right;
-  background: url("../../Assets/cookies.svg") no-repeat left / contain;
+  width: 100%;
+  background: url("../../Assets/cookies.svg") no-repeat center / contain;
 }
 .sweets-image {
-  width: 90px;
-  height: 100px;
-  float: right;
+  width: 100%;
   background: url("../../Assets/sweet.svg") no-repeat center / contain;
 }
 
 .stamp {
   width: 100%;
   height: 100px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 10px;
   background: url("../../Assets/stamp4.svg") no-repeat right / contain;
 }
 
 .additional-info {
+  border-left: 1px solid purple;
+  padding-left: 8%;
   display: grid;
+  width: 90%;
+  grid-template-rows: 40% 8% 20% 10% 10% 10%;
   text-align: left;
+}
+
+.message-box {
+  padding: 2%;
+  margin-bottom: 5%;
+  resize: none;
 }
 
 .contact-button {
   text-decoration: none;
   border: none;
-  background-image: linear-gradient(#bf1922, #fd5377, #f37691, #e03841);
+  background-color: #fd8a53;
   color: white;
-  font-family: "Castoro", serif;
-  font-style: none;
-  font-size: 1.7rem;
-  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
   width: 100%;
-  padding: 0.5%;
-  padding-left: 4%;
-  padding-right: 4%;
-  margin-bottom: 8%;
-  border-radius: 1rem;
+  padding: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-bottom: 0%;
+  transition: 1s;
+  border-radius: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+.contact-button:hover {
+  background-color: #582063;
+}
+
+@media screen and (max-width: 600px) {
   #Order {
-    font-family: "Castoro", serif;
     font-size: 1.2rem;
     background-color: white;
     width: 94%;
@@ -166,6 +212,15 @@
     margin-bottom: 0%;
     grid-template-columns: 1fr;
     justify-self: center;
+  }
+
+  .additional-info {
+    border-left: none;
+    padding-left: 8%;
+    display: grid;
+    width: 90%;
+    grid-template-rows: 40% 8% 20% 10% 10% 12%;
+    text-align: left;
   }
 
   .form-div {

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Montserrat:wght@400;500;600&display=swap");
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  background-color: rgb(88, 32, 99);
+  background-color: #582063;
   width: 88%;
   margin: 6%;
   margin-top: 0;
@@ -16,15 +16,16 @@
   text-decoration: none;
   border: none;
   color: white;
-  font-family: "Castoro", serif;
-  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  // font-style: italic;
+  font-weight: 400;
   font-size: 1.8rem;
   padding: 1%;
   transition: 1s;
 }
 
 .foot-link:hover {
-  color: #fd5377;
+  color: #fd8a53;
 }
 
 .copyright {
@@ -39,7 +40,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-    background-color: rgb(88, 32, 99);
+    background-color: #582063;
     width: 94%;
     margin: 3%;
     margin-top: 0;
@@ -47,12 +48,9 @@
   }
 
   .foot-link {
-    text-decoration: none;
-    border: none;
     color: white;
-    font-family: "Castoro", serif;
-    font-style: italic;
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1.1rem;
     padding: 1%;
     transition: 1s;
   }

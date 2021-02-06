@@ -15,21 +15,23 @@ function Explanation() {
                 </div>
                 <div className="color-div">
                     <div className="about-text">
-                        <p><b>Goodies!</b> A fun and delicious way to treat tastebuds and brighten a day.</p>
-                        <p><b>Parties!</b> Make party planning a breeze, and bring something special to eat for Birthday Parties, Gender Reveals, Graduations, Friendships, and More.</p>
-                        <p><b>Fun!</b> Creative, new, and personalized goodies to brighten up days for those that matter most.</p>
+                        <p><b className="emphasis purple">Goodies!</b> A fun and delicious way to treat tastebuds and brighten a day.</p>
+                        <p><b className="emphasis orange">Parties!</b> Make party planning a breeze, and bring something special to eat for Birthday Parties, Gender Reveals, Graduations, Friendships, and More.</p>
+                        <p><b className="emphasis red">Fun!</b> Creative, new, and personalized goodies to brighten up days for those that matter most.</p>
                     </div>
+                </div>
+                <div className="about-gallery">
+                    <div className="supplies"></div>
                 </div>
 
             </div>
-
             <div className="about-page-main">
 
                 <div className="color-div">
                     <div className="about-text">
-                        <p><b>Started</b> by Melanie Ulrich Oh! So Sweet has grown to bring sweetness and fun to everyone.</p>
-                        <p><b>Inspired</b> by her time working in a professional bakery Melanie wanted to bring those skills and creativity to everyone around her.</p>
-                        <p><b>This Dream</b> is going strong serving delicious treats and creating new delights.</p>
+                        <p><b className="emphasis purple">Started</b> by Melanie Ulrich Oh! So Sweet has grown to bring sweetness and fun to everyone.</p>
+                        <p><b className="emphasis orange">Inspired</b> by her time working in a professional bakery Melanie wanted to bring those skills and creativity to everyone around her.</p>
+                        <p><b className="emphasis red">This Dream</b> is going strong serving delicious treats and creating new delights.</p>
                     </div>
                 </div>
                 <div className="about-gallery">

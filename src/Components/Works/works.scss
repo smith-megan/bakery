@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Montserrat:wght@400;500;600&display=swap");
+
 #Works {
   background-color: white;
   display: grid;
@@ -7,8 +9,11 @@
   margin: 6%;
   margin-top: 0%;
   margin-bottom: 0%;
-  padding-top: 5%;
-  font-family: "Castoro", serif;
+  padding-top: 8.5%;
+  padding-bottom: 6%;
+  font-family: "Montserrat", sans-serif;
+  // font-style: italic;
+  // font-weight: 400;
 }
 
 .master-works {
@@ -31,24 +36,52 @@
 
 .works-text {
   display: grid;
-  grid-template-rows: 20% 25% 25% 25%;
+  grid-template-rows: 14% 24% 30% 23%;
+  grid-gap: 0.5%;
   //   flex-direction: column;
-  padding: 4%;
+  padding: 3%;
 }
 
 .works-paragraph {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 26% 74%;
   margin-bottom: 2%;
 }
-.works-text-title {
-  margin-top: 1%;
-  color: #bf1922;
-}
-
 .works-blurb {
   text-align: left;
   padding-right: 8%;
+  line-height: 2rem;
+}
+
+.works-text-title {
+  margin-top: 1%;
+  color: #bf1922;
+  font-family: "Amita", cursive;
+  font-style: none;
+  font-weight: 700;
+  font-size: 2.9rem;
+  line-height: 2.5rem;
+}
+
+.works-blurb-title {
+  color: #bf1922;
+  font-family: "Amita", cursive;
+  font-style: none;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 0.2rem;
+}
+
+.imagine {
+  color: #582063;
+}
+
+.choose {
+  color: #fd8a53;
+}
+
+.enjoy {
+  color: #bf1922;
 }
 
 .background {
@@ -59,19 +92,19 @@
 }
 
 .works-img-1 {
-  background: url("../../Assets/icons/star.svg") no-repeat right / contain;
+  background: url("../../Assets/icons/star.svg") no-repeat center / contain;
   //   width: 100%;
   height: 150px;
   margin: 15px;
 }
 .works-img-2 {
-  background: url("../../Assets/icons/tray.svg") no-repeat right / contain;
+  background: url("../../Assets/icons/tray.svg") no-repeat center / contain;
   height: 150px;
   //   width: 100%;
   margin: 15px;
 }
 .works-img-3 {
-  background: url("../../Assets/icons/cookie.svg") no-repeat right / contain;
+  background: url("../../Assets/icons/cookie.svg") no-repeat center / contain;
   height: 150px;
   //   width: 100%;
   margin: 15px;
@@ -79,17 +112,12 @@
 
 @media screen and (max-width: 600px) {
   #Works {
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr;
     width: 94%;
-    justify-content: center;
     margin: 3%;
-    margin-top: 0%;
+    margin-top: 2%;
     margin-bottom: 0%;
     padding-top: 2%;
     padding-bottom: 0%;
-    font-family: "Castoro", serif;
   }
 
   .works-div {
@@ -114,9 +142,9 @@
   }
 
   .works-text {
-    margin-top: 5%;
+    margin-top: 0%;
     display: grid;
-    grid-template-rows: 8% 28% 28% 28%;
+    grid-template-rows: 6% 30% 30% 33%;
     padding: 0%;
   }
 
@@ -126,7 +154,7 @@
   }
 
   .works-text-title {
-    font-size: 1.6em;
+    font-size: 1.7em;
     color: #bf1922;
   }
 

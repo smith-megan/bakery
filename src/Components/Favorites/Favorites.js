@@ -9,7 +9,7 @@ function Favorites() {
         ["Strawberry Punch", "A fun sweet tangy flavor topped with sliced strawberry in a cute heart, a fun treat for backyard barbeques or pool parties."],
         ["Cherry Twist", "Cherry flavored cupcake made from fresh in-season bing cherries and topped with chocolate deliciousness."],
         ["Chocolate Cheesecake", "Creamy like cheesecake and rich like chocolate this is sure to be a total hit."],
-        ["Cartoon Champion", "A favorite for the littles, these bright cupcakes come with custom white chocolate characters on top."]
+        ["Cartoon Champion", "A favorite for the littles, these bright cupcakes have custom white chocolate characters on top."]
     ]
 
     function buildMenu(array) {
@@ -17,9 +17,9 @@ function Favorites() {
         array.forEach((item, i, arr) => {
             builtMenu.push(
                 <div key={"menu" + i} className="menu">
-                    <div className={"cupcake" + i}></div>
+                    <div className={"shape cupcake" + i}></div>
                     <div className="cupcake-text">
-                        <h2>{item[0]}</h2>
+                        <h2 className="cupcake-header">{item[0]}</h2>
                         <p>{item[1]}</p>
                     </div>
                 </div>)

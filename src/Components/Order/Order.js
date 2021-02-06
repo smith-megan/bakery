@@ -56,7 +56,7 @@ function Order() {
 
     const cookies = {
         type: "cookies",
-        flavors: ["Chocolate", "Vanilla", "Snickerdoodle", "Macaroons", "Peanutbutter Chocolate"]
+        flavors: ["Chocolate Chip", "Vanilla", "Snickerdoodle", "Macaroons", "Peanutbutter & Chocolate"]
     }
 
     const frosting = {
@@ -90,43 +90,49 @@ function Order() {
                 <div className="handle-overflow">
                     <div className="form-div" id="letter">
                         <form className="actual-form" onSubmit={handleOnSubmit}>
-                            <div className="cupcakes-header">
-                                <div className="cupcake-image" ></div>
-                                <h2>Cupcakes</h2>
-                                {optionsForForm(cupCakes)}
-                                <h3>frosted with...</h3>
-                                {optionsForForm(frosting)}
-                            </div>
+                            <div className="checkboxes">
+                                <div className="cupcakes-header">
+                                    <div className="header-group">
+                                        <div className="cupcake-image" ></div>
+                                        <h2 className="form-item-header">Cupcakes</h2>
+                                    </div>
+                                    {optionsForForm(cupCakes)}
+                                    <h3 className="form-item-header frosted">frosted with...</h3>
+                                    {optionsForForm(frosting)}
+                                </div>
 
-                            <div className="cookies-header">
-                                <div className="cookie-image" />
-                                <h2>Cookies</h2>
-                                {optionsForForm(cookies)}
-                            </div>
+                                <div className="cookies-header">
+                                    <div className="header-group">
+                                        <div className="cookie-image" />
+                                        <h2 className="form-item-header">Cookies</h2>
+                                    </div>
+                                    {optionsForForm(cookies)}
+                                </div>
 
-                            <div className="candies-header">
-                                <div className="sweets-image" />
-                                <h2>Candies</h2>
-                                {optionsForForm(candies)}
+                                <div className="candies-header">
+                                    <div className="header-group">
+                                        <div className="sweets-image" />
+                                        <h2 className="form-item-header">Candies</h2>
+                                    </div>
+                                    {optionsForForm(candies)}
+                                </div>
                             </div>
 
                             <div className="additional-info">
                                 <div className="stamp"></div>
-                                <label htmlFor="message">Extra Notes:</label>
-                                <textarea id="message" name="message" placeholder="Colors, Themes, Details, or Ideas you want to chat about!"></textarea>
+                                <label htmlFor="message">Message:</label>
+                                <textarea className="message-box" id="message" name="message" placeholder="Colors, Themes, Details, or Ideas you want to chat about!"></textarea>
 
                                 <div>
                                     <label htmlFor="name">From:</label>
-                                    <input id="name" type="name" name="name" placeholder="First Last Name" required />
+                                    <input id="name" type="name" name="name" placeholder="First and Last Name" required />
                                 </div>
 
                                 <div>
                                     <label htmlFor="email">Email:</label>
                                     <input id="email" type="email" name="email" placeholder="email@emailservice.com" required />
                                 </div>
-                                <button className="contact-button" type="submit" disabled={serverState.submitting}>
-                                    Submit
-                        </button>
+                                <button className="contact-button" type="submit" disabled={serverState.submitting}>Submit</button>
                             </div>
                         </form>
                     </div>

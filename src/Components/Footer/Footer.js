@@ -10,7 +10,7 @@ function Footer() {
             <a className="foot-link" href="#Home">Home</a>
 
             <div>
-                <p className="copyright">CopyRight Oh So Sweet 2020</p>
+                <p className="copyright">CopyRight Oh So Sweet 2021</p>
                 <p className="copyright">All Rights Reserved</p>
             </div>
         </div>
