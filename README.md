@@ -1,8 +1,8 @@
-Oh So Sweet Bakery Single Page Website
+So Special Sweets Bakery Single Page Website
 
 Motivation: Create fully functioning modern site for client cupcake bakery.
 
-Built with React, uses fromspree.io for server side form handling.
+Built with React, uses Twilio for server side form and email handling.
 
 Code Snippet:
 
